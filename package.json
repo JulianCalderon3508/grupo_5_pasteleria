@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/JulianCalderon3508/grupo_5_pasteleria/issues"
   },
-  "homepage": "https://github.com/JulianCalderon3508/grupo_5_pasteleria#readme"
+  "homepage": "https://github.com/JulianCalderon3508/grupo_5_pasteleria#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
 }
