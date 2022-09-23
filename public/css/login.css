@@ -1,0 +1,29 @@
+.form-login {
+    display: flex;
+    flex-direction: column;
+    margin: 1vh
+}
+.boton {
+    border: #b76259 solid 2vh ;
+    border-radius: 1.5vh;
+    background-color: #b76259;
+    color: white;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    
+}
+.boton:hover {
+    background-color: #b76259;
+    border: #b76259 solid 2vh;
+    
+}
+.barrainfo{
+    margin: 1vh;
+    padding: 2vh;
+    margin-bottom: 4vh;
+    margin-top: 4vh;
+    border-radius: 2vh;
+    border: white solid;
+    background-color: #f6bab5;
+    
+}

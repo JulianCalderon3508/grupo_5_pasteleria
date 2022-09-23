@@ -1,0 +1,66 @@
+main form{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.interes {
+    text-align: left;
+    padding-left: 1vh;
+   
+}
+
+.item-interes {
+    margin: 0%;
+    justify-content: flex-start;
+    display: flex;
+    flex-grow: 1;
+    padding-left: 2.5vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+
+}
+
+.perfilusuario {
+   display: flex;
+   width: 60%;
+   justify-content: space-around;
+   padding: 2vh;
+   
+}
+.barrainfo{
+    margin: 1vh;
+    padding: 2vh;
+    margin-bottom: 3vh;
+    margin-top: 3vh;
+    border-radius: 2vh ;
+    border: white solid ;
+    
+}
+.barrafoto {
+    border: #ebebeb solid 1vh;
+    margin: 2vh;
+}
+.boton {
+    border: #b76259 solid 1vh ;
+    border-radius: 1.5vh;
+    background-color: #b76259;
+    color: white;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+
+
+
+main form input:valid  {
+    border-color: white
+}
+
+@media (min-width: 426px) {
+    .perfilusuario {
+        width: 35%;
+    }
+}

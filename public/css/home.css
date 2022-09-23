@@ -2,20 +2,23 @@
     margin: 0px;
     padding: 0px;    
     box-sizing: border-box;
+    font-family: 'American Typewriter', sans-serif;
+
 }
 
 
 body {
     background-image: url("../images/Fondo.png");   
-    margin:  0px;
+    margin:  0px;        
   }
 
 .top-header{
   display: flex;
-  flex-direction: column;  
-  justify-content:  space-between;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: flex-start;
 }
-
 
 .image-top{
   position: absolute;
@@ -23,15 +26,74 @@ body {
   width: 100%;
 }
 
-
-.logo{
-  position: absolute;
-  height: 15%;
-  width: 100%;
-  margin-top: 64px;
-  text-align: center;
-}
-
 .image-logo{
-  height: 132px;
+  height: 179px;
 }
+
+.contenedor{
+  display: flex;
+  margin-top: 33px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.iconos{
+  align-self: center;
+  padding-left: 30px;
+}
+
+header nav{
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+nav a{
+  text-decoration:none;
+  color:#633812;
+  font-size:14px;  
+  } 
+
+  nav li{
+  display:inline-block;
+  width:10%;
+  padding:5px 10px;
+  background-color:#f6bab5;
+  border-radius: 15px;
+  text-align:center;
+  color:#fff;
+  }
+  nav li:hover{
+  background-color:#78bac3;
+  }
+
+  main{
+    height: 200px;
+  }
+
+  footer{
+    background-color:#b76259;
+    font-size: 12pt;
+  }
+
+
+  footer .footer-contenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  footer .footer-contenedor div h4 {
+    font-weight: bold;
+    color: #fff;
+    padding: 5px;
+  }
+
+  footer .footer-contenedor div a,
+  footer .footer-contenedor div p {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+
+  }
