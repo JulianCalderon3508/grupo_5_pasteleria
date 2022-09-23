@@ -40,17 +40,22 @@
     </header>
 
     <main>
-
+        <div class="bienvenida">
+            <h2>¡Bienvenido(a)!</h2>
+            <p>Ingresa tus credenciales para iniciar sesión</p>
+        </div>
+       
         <form class="form-login" action="/login" method="post">
             <input class="barrainfo" type="text" name="usuario" placeholder="Nombre de usuario" required maxlength="20" minlength="2">
             <input class="barrainfo" type="password" name="password" placeholder="Elegí tu contraseña" required minlength="4" maxlength="16">
             <button class="boton" type="submit">Enviar</button>
-            
-
-            <a href="/login"> <img src="images/login.png"   alt="Logo Pastelería"></a>
         </form>
-    </main>
 
+        <div class="registrarse">
+            <h3>¿No tienes usuario?</h3>
+            <h3 href="/register" style="text-decoration-line: underline;">Registrate</h3> 
+        </div>
+    </main>
     <footer>
         <div class="footer-contenedor">
             <div>
@@ -73,11 +78,13 @@
             </div>
             <div>
                 <h4>Siguenos</h4>
-                <img src="images/Instagram.png">
-                <img src="images/Facebook.png">
+                <a href=""> <img src="images/Instagram.png"></a>
+                <a href=""><img src="images/Facebook.png"></a>
             </div>
         </div>
     </footer>
+
+    
 </body>
 
 </html>
