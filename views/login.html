@@ -1,12 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="css/home.css">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <header>
+        <div class="top-header">
+            <div>
+                <img src="images/top.png" class="image-top">
+            </div>
+            <div>
+                <div class="logo">
+                    <img src="images/logo.png" class="image-logo" alt="Logo Pastelería">
+                </div>
+                <div class="iconos">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <form class="form-login" action="/login" method="post">
+            <input class="barrainfo" type="text" name="usuario" placeholder="Nombre de usuario" required maxlength="20" minlength="2">
+            <input class="barrainfo" type="password" name="password" placeholder="Elegí tu contraseña" required minlength="4" maxlength="16">
+            <button class="boton" type="submit">Enviar</button>
+        </form>
+    </main>
 </body>
+
 </html>

@@ -5,59 +5,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/register.css">
+    <link rel="stylesheet" href="css/home.css">
     <title>Registrate en PastelPlace</title>
 </head>
 
 <body>
     <header>
-    </header>
-    <main class="register">
-        <form action="/register" method="POST">
-            <input type="text" name="name" placeholder="Nombre y apellido">
-            <input type="text" name="user" placeholder="Nombre de usuario">
-            <input type="email" name="email" placeholder="E-mail">
-            <br>
-            <label for="birth_date"><b>Fecha de nacimiento</b></label>
-            <br>
-            <input type="date" name="birth_date" id="birth_date">
-            <br>
-            <input type="text" name="addres" placeholder="Domicilio">
-            <h4>Perfil del usuario</h4>
-            <div class="profile">
-                <input type="radio" name="profile" value="buy" id="buy">
-                <label for="buy">Comprador</label>
-                <input type="radio" name="profile" value="sell" id="sell">
-                <label for="sell">Vendedor</label>
+        <div class="top-header">
+            <div>
+                <img src="images/top.png" class="image-top">
             </div>
+            <div>
+                <div class="logo">
+                    <img src="images/logo.png" class="image-logo" alt="Logo Pastelería">
+                </div>
+                <div class="iconos">
+                </div>
+            </div>
+        </div>
+    </header>
 
-            <h4>Elegí tu foto de usuario</h4>
-            <input type="file" name="avatar">
-            <br>
-            <br>
-            <input type="password" name="pass" placeholder="Elegí tu contraseña">
-            <input type="password" name="pass_confirm" placeholder="Confirmá tu contraseña">
-            <br>
-            <br>
-            <button type="submit" class="enviar">Registrate</button>
-            <button type="reset" class="borrar">Borrar</button>
-            <br>
-            <br>
-        </form>
+    <form action="/register" method="post">
+        <input class="barrainfo" type="text" name="nombre" placeholder="Nombre y Apellido" required minlength="4" >
+        <input class="barrainfo" type="text" name="usuario" placeholder="Nombre de usuario" required  minlength="2" maxlength="15" >
+        <input class="barrainfo" type="email" name="email" placeholder="Email">
+        
+        <label for="fechadenacimiento"><strong>Fecha de Nacimiento</strong></label>
+        <input class="barrainfo" type="date" name="fechadenacimiento" id="fechadenacimiento">
+        <input class="barrainfo" type="text" name="domicilio" placeholder="Domicilio">
+        <p><strong>Perfil de usuario</strong></p>
+        <div class="perfilusuario">
+            <input type="radio" name="perfil" value="comprador" id="comprador" >
+            <label for="comprador">Comprador</label>
+            
+            <input type="radio" name="perfil" value="vendedor" id="vendedor">
+            <label for="vendedor">Vendedor</label>
+        </div>
+
+            <label style="font-weight:bold;" for="foto">Foto de usuario</label>
+            <input class="barrafoto" type="file" name="fotodeusuario" id="foto" accept=".jpg, .png" >
+        </p>
+        <input class="barrainfo" type="password" name="password" placeholder="Contraseña" required minlength="4">
+        <input class="barrainfo" type="password" name="passwordconfirm" placeholder="Confirmar contraseña" required minlength="4">
+
+        <button class="boton" type="submit">Enviar</button>
+        <button class="boton" type="reset">Borrar</button>
+    </form>
     </main>
     <footer>
     </footer>
-</body>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-
-<body>
-
 </body>
 
 </html>
