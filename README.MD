@@ -26,4 +26,15 @@ Las categorías que se van a encontrar en la página son las siguientes:
 
 Link de los wireframes https://xd.adobe.com/view/08c7eeff-a678-4c8d-bddb-783b66a3315d-5d94/
 
+Links de inspiración:
+https://entredos.com.ar/
+https://www.hechoenlapasteleria.com.ar/
+https://dulceelena.com.ar/
+https://www.deli.com.co/Deli-Inicio/
+https://pasteleriacharlotte.com/?gclid=Cj0KCQjw9ZGYBhCEARIsAEUXITUPQMZV0ODB6OSR2DRNJKCD3NFy-dXvqdxsPLpklNyBnaZiVwPMiKIaAvi-EALw_wcB
+https://www.maitepasteleria.com/
+https://almadebarriocafe.com/
+
+
+
 
