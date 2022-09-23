@@ -1,0 +1,37 @@
+*{  
+    margin: 0px;
+    padding: 0px;    
+    box-sizing: border-box;
+}
+
+
+body {
+    background-image: url("../images/Fondo.png");   
+    margin:  0px;
+  }
+
+.top-header{
+  display: flex;
+  flex-direction: column;  
+  justify-content:  space-between;
+}
+
+
+.image-top{
+  position: absolute;
+  height: 9%;
+  width: 100%;
+}
+
+
+.logo{
+  position: absolute;
+  height: 15%;
+  width: 100%;
+  margin-top: 64px;
+  text-align: center;
+}
+
+.image-logo{
+  height: 132px;
+}
