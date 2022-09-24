@@ -17,7 +17,7 @@ app.get('/login', (req,res)=>{
 });
 
 app.get('/carrito', (req,res)=>{
-    res.sendFile(__dirname + '/views/carrito.html');
+    res.sendFile(__dirname + '/views/productCart.html');
 });
 
 
