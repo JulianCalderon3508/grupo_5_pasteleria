@@ -1,5 +1,10 @@
 .contenedor{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: flex-start;
+}
+
+.productos{
+    text-align: center;
+    padding-top: 30px;
 }
