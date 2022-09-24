@@ -1,10 +1,20 @@
+.main-register{
+        width: 60%;
+        background-color: #eacab2;
+        padding: 30px;
+        border-radius: 15px;
+        margin: auto;
+        margin-top: 20px;
+        text-align: center;
+}
+
 main form{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-between;
     text-align: left;
-    margin-left: 4vh;
+   
     
 }
 
@@ -36,8 +46,7 @@ main form{
     margin-top: 3vh;
     border-radius: 10vh ;
     border: white solid ;
-    background-color: #f6bab5;
-    width: 50%;
+    background-color: #fff;
     
 }
 .barrafoto {
@@ -49,9 +58,8 @@ main form{
     border-radius: 10vh;
     background-color: #b76259;
     color: white;
-    margin-bottom: 3vh;
-    margin-left: 15%;
-    width: 20%;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
     font-size: larger;
 }
 
@@ -59,7 +67,7 @@ main form{
 
 
 main form input:valid  {
-    border-color: white
+    border-color: #eacab2
 }
 
 @media (min-width: 426px) {

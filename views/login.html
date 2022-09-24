@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="css/home.css"> 
-    <link rel="stylesheet" href="css/login.css"> 
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/login.css">
     <link href="http://fonts.cdnfonts.com/css/american-typewriter" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 </head>
@@ -15,28 +15,30 @@
 <body>
     <header>
         <div class="top-header">
-            <div >
-                 <img src="images/top.png" class="image-top">
-            </div>      
-            <div class="contenedor">   
-                <div class="logo" >
-                    <a href="/">  <img src="images/logo.png"  class="image-logo"  alt="Logo Pastelería"></a>    
-                </div>    
+            <div>
+                <img src="images/top.png" class="image-top">
+            </div>
+            <div class="contenedor">
+                <div class="logo">
+                    <a href="/"> <img src="images/logo.png" class="image-logo" alt="Logo Pastelería"></a>
+                </div>
                 <div></div>
                 <div class="iconos">
-                   <a href="/carrito" > <img src="images/carrito.png"   alt="Logo Pastelería"></a> 
-                   <a href="/login"> <img src="images/login.png"   alt="Logo Pastelería"></a>
-                </div>    
+                    <a href="/carrito"> <img src="images/carrito.png" alt="Logo Pastelería"></a>
+                    <a href="/login"> <img src="images/login.png" alt="Logo Pastelería"></a>
+                </div>
             </div>
         </div>
         <div>
-            <nav><ul>
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Pastelería</a></li>
-                <li><a href="#">Cupcakes</a></li>
-                <li><a href="#">Postres</a></li>
-                <li><a href="#">Contactanos</a></li>
-            </ul></nav>
+            <nav>
+                <ul>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Pastelería</a></li>
+                    <li><a href="#">Cupcakes</a></li>
+                    <li><a href="#">Postres</a></li>
+                    <li><a href="#">Contactanos</a></li>
+                </ul>
+            </nav>
             <div class="burger-menu">
                 <i class="fa fa-bars burger"></i>
             </div>
@@ -44,47 +46,52 @@
     </header>
 
     <main>
-      
-        <div>
-          <div class="bienvenida">
-            <h2>¡Bienvenido(a)!</h2>
-            <p>Ingresa tus credenciales para iniciar sesión</p>
-        </div>
-       
-        <form class="form-login" action="/login" method="post">
-            <input class="barrainfo" type="text" name="usuario" placeholder="Nombre de usuario" required maxlength="20" minlength="2">
-            <input class="barrainfo" type="password" name="password" placeholder="Elegí tu contraseña" required minlength="4" maxlength="16">
-            <a href="" class="registrarse" style="font-size: larger;  margin-left: 20%">¿Olvidaste tu contraseña?</a>
-            <button class="boton" type="submit">Enviar</button>
-        </form>
+        <section class="main-login">
+            <div>
+                <div class="bienvenida">
+                    <h2>¡Bienvenido(a)!</h2>
+                    <p>Ingresa tus credenciales para iniciar sesión</p>
+                </div>
 
-        <div class="registrarse">
-            <h3>¿No tienes usuario?</h3>
-            <a href="/register" >Registrate</a>
-            
-        </div>  
-        </div>
-    </section>
+                <form class="form-login" action="/login" method="post">
+                    <input class="barrainfo" type="text" name="usuario" placeholder="Nombre de usuario" required
+                        maxlength="20" minlength="2">
+                    <input class="barrainfo" type="password" name="password" placeholder="Elegí tu contraseña" required
+                        minlength="4" maxlength="16">
+                    <a href="" class="registrarse" style="font-size: larger; margin-top: 3vh;">¿Olvidaste tu
+                        contraseña?</a>
+                    <button class="boton" type="submit">Enviar</button>
+                </form>
+
+                <div class="registrarse">
+                    <h3>¿No tienes usuario?</h3>
+                    <a href="/register">Registrate</a>
+
+                </div>
+            </div>
+        </section>
+
+        </section>
     </main>
     <footer>
         <div class="footer-contenedor">
             <div>
-                <h4>Home</h4>                
+                <h4>Home</h4>
                 <a href="">Nosotros</a>
                 <a href="">Pastelería</a>
                 <a href="">Cupcakes</a>
                 <a href="">Postres</a>
             </div>
             <div>
-                <h4>Contactanos</h4>                
+                <h4>Contactanos</h4>
                 <p>info@pastelplace.com</p>
                 <p>(123) 4567890</p>
             </div>
             <div>
-                <h4>Horario de atención</h4>                
+                <h4>Horario de atención</h4>
                 <p>Lunes a viernes 8:00 a.m. - 8:00 p.m.</p>
                 <p>Sabado, domingo y festivo</p>
-                <p>9:00 a.m.  10:pm</p>
+                <p>9:00 a.m. 10:pm</p>
             </div>
             <div class="social-media">
                 <h4>Siguenos</h4>
@@ -98,7 +105,7 @@
         </div>
     </footer>
 
-    
+
 </body>
 
 </html>
