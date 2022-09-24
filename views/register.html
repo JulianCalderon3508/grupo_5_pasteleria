@@ -1,12 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/register.css">
+
 </head>
+
 <body>
+    <header>
+        <div class="top-header">
+            <div>
+                <img src="images/top.png" class="image-top">
+            </div>
+            <div class="contenedor">
+                <div class="logo">
+                    <a href="/"> <img src="images/logo.png" class="image-logo" alt="Logo Pastelería"></a>
+                </div>
+                <div></div>
+                <div class="iconos">
+                    <a href="/carrito"> <img src="images/carrito.png" alt="Logo Pastelería"></a>
+                    <a href="/login"> <img src="images/login.png" alt="Logo Pastelería"></a>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <main>
+
+        <form action="/register" method="post">
+            <input class="barrainfo" type="text" name="nombre" placeholder="Nombre y Apellido" required minlength="4">
+            <input class="barrainfo" type="text" name="usuario" placeholder="Nombre de usuario" required minlength="2"
+                maxlength="15">
+            <input class="barrainfo" type="email" name="email" placeholder="Email">
+
+            <label for="fechadenacimiento"><strong>Fecha de Nacimiento</strong></label>
+            <input class="barrainfo" type="date" name="fechadenacimiento" id="fechadenacimiento">
+            <input class="barrainfo" type="text" name="domicilio" placeholder="Domicilio">
+            <p><strong>Perfil de usuario</strong></p>
+            <div class="perfilusuario">
+                <input type="radio" name="perfil" value="comprador" id="comprador">
+                <label for="comprador">Comprador</label>
+
+                <input type="radio" name="perfil" value="vendedor" id="vendedor">
+                <label for="vendedor">Vendedor</label>
+            </div>
+
+            <label style="font-weight:bold;" for="foto">Foto de usuario</label>
+            <input class="barrafoto" type="file" name="fotodeusuario" id="foto" accept=".jpg, .png">
+            </p>
+            <input class="barrainfo" type="password" name="password" placeholder="Contraseña" required minlength="4">
+            <input class="barrainfo" type="password" name="passwordconfirm" placeholder="Confirmar contraseña" required
+                minlength="4">
+
+            <button class="boton" type="submit">Enviar</button>
+            <button class="boton" type="reset">Borrar</button>
+        </form>
+    </main>
     
+    <footer>
+        <div class="footer-contenedor">
+            <div>
+                <h4>Home</h4>
+                <a href="">Nosotros</a>
+                <a href="">Pastelería</a>
+                <a href="">Cupcakes</a>
+                <a href="">Postres</a>
+            </div>
+            <div>
+                <h4>Contactanos</h4>
+                <p>info@pastelplace.com</p>
+                <p>(123) 4567890</p>
+            </div>
+            <div>
+                <h4>Horario de atención</h4>
+                <p>Lunes a viernes 8:00 a.m. - 8:00 p.m.</p>
+                <p>Sabado, domingo y festivo</p>
+                <p>9:00 a.m. 10:pm</p>
+            </div>
+            <div>
+                <h4>Siguenos</h4>
+                <a href=""> <img src="images/Instagram.png"></a>
+                <a href=""><img src="images/Facebook.png"></a>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
