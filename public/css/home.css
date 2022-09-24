@@ -9,7 +9,10 @@
 
 body {
     background-image: url("../images/Fondo.png");   
-    margin:  0px;        
+    margin:  0px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
   }
 
 .top-header{
@@ -78,6 +81,7 @@ nav a{
   footer{
     background-color:#b76259;
     font-size: 12pt;
+    margin-top: auto;
   }
 
 
@@ -101,6 +105,7 @@ nav a{
     padding: 5px;
 
   }
+<<<<<<< HEAD
 
 
 
@@ -136,4 +141,6 @@ nav a{
     height: 179px;
   }
   
+=======
+>>>>>>> a90091ec549609c5465c64b51e0c8c9ee11e6650
 }
