@@ -133,9 +133,7 @@ div.formulario-home h4 {
   margin-bottom: 1em;
 }
 
-  
 
-  @media (min-width: 361px){
 textarea,
 input.campos {
   width: 100%;
@@ -144,6 +142,7 @@ input.campos {
   margin-bottom: 10px;
   border: none;
 }
+
 
 footer {
   background-color: #b76259;
@@ -176,43 +175,45 @@ footer .footer-contenedor div p {
 
 
 
-@media (min-width: 361px) {}
+@media (min-width: 361px) {
+
+}
 
 
 @media (min-width: 769px) {
 
-  .contenedor {
-    display: flex;
-    margin-top: 33px;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-  }
+    .contenedor {
+      display: flex;
+      margin-top: 33px;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+    }
 
-  .iconos {
-    display: block;
-  }
+    .iconos {
+      display: block;
+    }
 
-  footer .footer-contenedor {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
+    footer .footer-contenedor {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
 
-  footer .social-media{
-    display: flex;
-    flex-direction: row;       
-    justify-content: space-around;  
-  }
-  .image-logo{
-    height: 179px;
-  }
-  div.burger-menu{
-    display: none;
-  }
-  header nav{
-    display:block;
-  }
-}
+    footer .social-media{
+      display: flex;
+      flex-direction: row;       
+      justify-content: space-around;  
+    }
+    .image-logo{
+      height: 179px;
+    }
+    div.burger-menu{
+      display: none;
+    }
 
+    header nav{
+      display:block;
+    }  
+  }
 
