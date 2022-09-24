@@ -17,9 +17,16 @@ app.get('/login', (req,res)=>{
 });
 
 app.get('/carrito', (req,res)=>{
-    res.sendFile(__dirname + '/views/carrito.html');
+    res.sendFile(__dirname + '/views/productCart.html');
 });
+
+
+app.get('/product-detail', (req,res) => {
+    res.sendFile(__dirname + '/views/productDetail.html')
+});
+
 
 app.get('/register', (req,res)=>{
     res.sendFile(__dirname + '/views/register.html');
 });
+
