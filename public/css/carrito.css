@@ -3,11 +3,25 @@ main div.main-title {
     text-align: center;
 }
 
+
+
+main{
+    width: 28%;
+    background-color: #eacab2;
+    padding: 30px;
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
 main div.main-title  h4,
 .encabezado p{
     font-size: 20px;
     margin-bottom: 1em;
-    padding: 30px;
+    padding: 10px;
     color: #633812;
 }
 

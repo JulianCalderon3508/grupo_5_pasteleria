@@ -5,6 +5,16 @@
 }
 
 .productos{
+    text-align: center;    
+}
+
+main{
+    width: 28%;
+    background-color: #eacab2;
+    padding: 30px;
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 20px;
     text-align: center;
-    padding-top: 30px;
+    margin-bottom: 20px;
 }
