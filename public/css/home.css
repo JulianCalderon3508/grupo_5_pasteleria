@@ -3,6 +3,7 @@
   padding: 0px;
   box-sizing: border-box;
   font-family: 'American Typewriter', sans-serif;
+  
 
 }
 
@@ -76,7 +77,7 @@ nav li:hover {
 }
 
 main {
-  height: 200px;
+  height: 100%;
 }
 
 footer {
