@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/home.css"> 
     <link rel="stylesheet" href="css/login.css"> 
     <link href="http://fonts.cdnfonts.com/css/american-typewriter" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 </head>
 
 <body>
@@ -36,10 +37,14 @@
                 <li><a href="#">Postres</a></li>
                 <li><a href="#">Contactanos</a></li>
             </ul></nav>
+            <div class="burger-menu">
+                <i class="fa fa-bars burger"></i>
+            </div>
         </div>
     </header>
 
     <main>
+      
         <div>
           <div class="bienvenida">
             <h2>¡Bienvenido(a)!</h2>
@@ -49,15 +54,17 @@
         <form class="form-login" action="/login" method="post">
             <input class="barrainfo" type="text" name="usuario" placeholder="Nombre de usuario" required maxlength="20" minlength="2">
             <input class="barrainfo" type="password" name="password" placeholder="Elegí tu contraseña" required minlength="4" maxlength="16">
+            <a href="" class="registrarse" style="font-size: larger;  margin-left: 20%">¿Olvidaste tu contraseña?</a>
             <button class="boton" type="submit">Enviar</button>
         </form>
 
         <div class="registrarse">
             <h3>¿No tienes usuario?</h3>
-            <h3 href="/register" style="text-decoration-line: underline;">Registrate</h3> 
+            <a href="/register" >Registrate</a>
+            
         </div>  
         </div>
-        
+    </section>
     </main>
     <footer>
         <div class="footer-contenedor">
@@ -79,10 +86,14 @@
                 <p>Sabado, domingo y festivo</p>
                 <p>9:00 a.m.  10:pm</p>
             </div>
-            <div>
+            <div class="social-media">
                 <h4>Siguenos</h4>
-                <a href=""> <img src="images/Instagram.png"></a>
-                <a href=""><img src="images/Facebook.png"></a>
+                <div>
+                    <a href=""> <img src="images/Instagram.png"></a>
+                </div>
+                <div>
+                    <a href=""><img src="images/Facebook.png"></a>
+                </div>
             </div>
         </div>
     </footer>

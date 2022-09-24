@@ -4,6 +4,8 @@ main form{
     flex-direction: column;
     justify-content: space-between;
     text-align: left;
+    margin-left: 4vh;
+    
 }
 
 .interes {
@@ -23,33 +25,34 @@ main form{
 
 }
 
-.perfilusuario {
-   display: flex;
-   width: 60%;
-   justify-content: space-around;
-   padding: 2vh;
-   
+.texto-registro{
+    margin: 3vh;
+    color:#633812;
 }
 .barrainfo{
     margin: 1vh;
     padding: 2vh;
     margin-bottom: 3vh;
     margin-top: 3vh;
-    border-radius: 2vh ;
+    border-radius: 10vh ;
     border: white solid ;
+    background-color: #f6bab5;
+    width: 50%;
     
 }
 .barrafoto {
-    border: #ebebeb solid 1vh;
+    border: #633812 solid 1vh;
     margin: 2vh;
 }
 .boton {
-    border: #b76259 solid 1vh ;
-    border-radius: 1.5vh;
+    border: #b76259 solid 2vh;
+    border-radius: 10vh;
     background-color: #b76259;
     color: white;
-    margin-top: 1vh;
-    margin-bottom: 1vh;
+    margin-bottom: 3vh;
+    margin-left: 15%;
+    width: 20%;
+    font-size: larger;
 }
 
 
@@ -60,7 +63,5 @@ main form input:valid  {
 }
 
 @media (min-width: 426px) {
-    .perfilusuario {
-        width: 35%;
-    }
+
 }

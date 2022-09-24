@@ -26,6 +26,8 @@ Las categorías que se van a encontrar en la página son las siguientes:
 
 Link de los wireframes https://xd.adobe.com/view/08c7eeff-a678-4c8d-bddb-783b66a3315d-5d94/
 
+Link a trello: https://trello.com/invite/b/Qx6m2ZTM/f41ff38976c16985f60d502baf1bbe5b/proyecto-integrador-grupo-5-sprint-2
+
 Links de inspiración:
 https://entredos.com.ar/
 https://www.hechoenlapasteleria.com.ar/

@@ -8,6 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 
 </head>
 
@@ -28,40 +29,47 @@
                 </div>
             </div>
         </div>
-
+        <div>
+            <nav><ul>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Pastelería</a></li>
+                <li><a href="#">Cupcakes</a></li>
+                <li><a href="#">Postres</a></li>
+                <li><a href="#">Contactanos</a></li>
+            </ul></nav>
+            <div class="burger-menu">
+                <i class="fa fa-bars burger"></i>
+            </div>
+        </div>
     </header>
     <main>
+        <section >
+            <form action="/register" method="post">
+                <input class="barrainfo" type="text" name="nombre" placeholder="Nombre y Apellido" required
+                    minlength="4">
+                <input class="barrainfo" type="text" name="usuario" placeholder="Nombre de usuario" required
+                    minlength="2" maxlength="15">
+                <input class="barrainfo" type="email" name="email" placeholder="Email">
 
-        <form action="/register" method="post">
-            <input class="barrainfo" type="text" name="nombre" placeholder="Nombre y Apellido" required minlength="4">
-            <input class="barrainfo" type="text" name="usuario" placeholder="Nombre de usuario" required minlength="2"
-                maxlength="15">
-            <input class="barrainfo" type="email" name="email" placeholder="Email">
+                <label for="fechadenacimiento" class="texto-registro"><strong>Fecha de Nacimiento</strong></label>
+                <input class="barrainfo" type="date" name="fechadenacimiento" id="fechadenacimiento">
+                <input class="barrainfo" type="text" name="domicilio" placeholder="Domicilio">
+            
+                <label style="font-weight:bold;" for="foto" class="texto-registro">Foto de usuario</label>
+                <input class="barrafoto" type="file" name="fotodeusuario" id="foto" accept=".jpg, .png">
+                </p>
+                <input class="barrainfo" type="password" name="password" placeholder="Contraseña" required
+                    minlength="4">
+                <input class="barrainfo" type="password" name="passwordconfirm" placeholder="Confirmar contraseña"
+                    required minlength="4">
 
-            <label for="fechadenacimiento"><strong>Fecha de Nacimiento</strong></label>
-            <input class="barrainfo" type="date" name="fechadenacimiento" id="fechadenacimiento">
-            <input class="barrainfo" type="text" name="domicilio" placeholder="Domicilio">
-            <p><strong>Perfil de usuario</strong></p>
-            <div class="perfilusuario">
-                <input type="radio" name="perfil" value="comprador" id="comprador">
-                <label for="comprador">Comprador</label>
+                <button class="boton" type="submit">Enviar</button>
+                <button class="boton" type="reset">Borrar</button>
+            </form>
+        </section>
 
-                <input type="radio" name="perfil" value="vendedor" id="vendedor">
-                <label for="vendedor">Vendedor</label>
-            </div>
-
-            <label style="font-weight:bold;" for="foto">Foto de usuario</label>
-            <input class="barrafoto" type="file" name="fotodeusuario" id="foto" accept=".jpg, .png">
-            </p>
-            <input class="barrainfo" type="password" name="password" placeholder="Contraseña" required minlength="4">
-            <input class="barrainfo" type="password" name="passwordconfirm" placeholder="Confirmar contraseña" required
-                minlength="4">
-
-            <button class="boton" type="submit">Enviar</button>
-            <button class="boton" type="reset">Borrar</button>
-        </form>
     </main>
-    
+
     <footer>
         <div class="footer-contenedor">
             <div>
@@ -82,13 +90,18 @@
                 <p>Sabado, domingo y festivo</p>
                 <p>9:00 a.m. 10:pm</p>
             </div>
-            <div>
+            <div class="social-media">
                 <h4>Siguenos</h4>
-                <a href=""> <img src="images/Instagram.png"></a>
-                <a href=""><img src="images/Facebook.png"></a>
+                <div>
+                    <a href=""> <img src="images/Instagram.png"></a>
+                </div>
+                <div>
+                    <a href=""><img src="images/Facebook.png"></a>
+                </div>
             </div>
         </div>
     </footer>
 
 </body>
+
 </html>
