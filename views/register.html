@@ -43,37 +43,33 @@
         </div>
     </header>
     <main>
+        <section>
+            <form action="/register" method="post">
+                <input class="barrainfo" type="text" name="nombre" placeholder="Nombre y Apellido" required
+                    minlength="4">
+                <input class="barrainfo" type="text" name="usuario" placeholder="Nombre de usuario" required
+                    minlength="2" maxlength="15">
+                <input class="barrainfo" type="email" name="email" placeholder="Email">
 
-        <form action="/register" method="post">
-            <input class="barrainfo" type="text" name="nombre" placeholder="Nombre y Apellido" required minlength="4">
-            <input class="barrainfo" type="text" name="usuario" placeholder="Nombre de usuario" required minlength="2"
-                maxlength="15">
-            <input class="barrainfo" type="email" name="email" placeholder="Email">
+                <label for="fechadenacimiento" class="texto-registro"><strong>Fecha de Nacimiento</strong></label>
+                <input class="barrainfo" type="date" name="fechadenacimiento" id="fechadenacimiento">
+                <input class="barrainfo" type="text" name="domicilio" placeholder="Domicilio">
+            
+                <label style="font-weight:bold;" for="foto" class="texto-registro">Foto de usuario</label>
+                <input class="barrafoto" type="file" name="fotodeusuario" id="foto" accept=".jpg, .png">
+                </p>
+                <input class="barrainfo" type="password" name="password" placeholder="Contraseña" required
+                    minlength="4">
+                <input class="barrainfo" type="password" name="passwordconfirm" placeholder="Confirmar contraseña"
+                    required minlength="4">
 
-            <label for="fechadenacimiento"><strong>Fecha de Nacimiento</strong></label>
-            <input class="barrainfo" type="date" name="fechadenacimiento" id="fechadenacimiento">
-            <input class="barrainfo" type="text" name="domicilio" placeholder="Domicilio">
-            <p><strong>Perfil de usuario</strong></p>
-            <div class="perfilusuario">
-                <input type="radio" name="perfil" value="comprador" id="comprador">
-                <label for="comprador">Comprador</label>
+                <button class="boton" type="submit">Enviar</button>
+                <button class="boton" type="reset">Borrar</button>
+            </form>
+        </section>
 
-                <input type="radio" name="perfil" value="vendedor" id="vendedor">
-                <label for="vendedor">Vendedor</label>
-            </div>
-
-            <label style="font-weight:bold;" for="foto">Foto de usuario</label>
-            <input class="barrafoto" type="file" name="fotodeusuario" id="foto" accept=".jpg, .png">
-            </p>
-            <input class="barrainfo" type="password" name="password" placeholder="Contraseña" required minlength="4">
-            <input class="barrainfo" type="password" name="passwordconfirm" placeholder="Confirmar contraseña" required
-                minlength="4">
-
-            <button class="boton" type="submit">Enviar</button>
-            <button class="boton" type="reset">Borrar</button>
-        </form>
     </main>
-    
+
     <footer>
         <div class="footer-contenedor">
             <div>
@@ -107,4 +103,5 @@
     </footer>
 
 </body>
+
 </html>
