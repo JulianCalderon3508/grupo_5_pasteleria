@@ -34,6 +34,23 @@ body {
 
 }
 
+
+div.burger-menu{
+  text-align: center;
+}
+
+div.burger-menu i{
+  background-color: #f6bab5;
+  border-radius: 20px;
+  color: #633812;
+  font-size: 20px;
+  height: 40px;
+  margin: 10px 0px 20px 0px;
+  padding: 10px;
+  width: 40px;
+}
+
+
 .contenedor {
   display: flex;
   margin-top: 33px;
@@ -54,6 +71,16 @@ header nav {
 }
 
 
+nav a{
+  text-decoration:none;
+  color:#633812;
+  font-size:14px;  
+  } 
+  
+  header nav{
+    display: none;
+  }
+  
 nav a {
   text-decoration: none;
   color: #633812;
@@ -80,6 +107,17 @@ main {
 }
 
 
+  footer .footer-contenedor{
+    display: flex;
+    flex-direction: column;    
+    padding: 20px;
+  }
+  
+  footer .footer-contenedor div h4 {
+    font-weight: bold;
+    color: #fff;
+    padding: 5px;
+  }
 div.formulario-home {
   width: 400px;
   background-color: #eacab2;
@@ -95,6 +133,7 @@ div.formulario-home h4 {
   margin-bottom: 1em;
 }
 
+
 textarea,
 input.campos {
   width: 100%;
@@ -103,6 +142,7 @@ input.campos {
   margin-bottom: 10px;
   border: none;
 }
+
 
 footer {
   background-color: #b76259;
@@ -115,7 +155,7 @@ footer .footer-contenedor {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
-  align-items: center;
+  
   padding: 20px;
 }
 
@@ -131,38 +171,49 @@ footer .footer-contenedor div p {
   color: #fff;
   text-decoration: none;
   padding: 5px;
-
 }
 
-@media (min-width: 361px) {}
+
+
+@media (min-width: 361px) {
+
+}
 
 
 @media (min-width: 769px) {
 
+    .contenedor {
+      display: flex;
+      margin-top: 33px;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+    }
 
+    .iconos {
+      display: block;
+    }
 
-  .contenedor {
-    display: flex;
-    margin-top: 33px;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
+    footer .footer-contenedor {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+
+    footer .social-media{
+      display: flex;
+      flex-direction: row;       
+      justify-content: space-around;  
+    }
+    .image-logo{
+      height: 179px;
+    }
+    div.burger-menu{
+      display: none;
+    }
+
+    header nav{
+      display:block;
+    }  
   }
-
-  .iconos {
-    display: block;
-  }
-
-  footer .footer-contenedor {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-
-  .image-logo {
-    height: 179px;
-  }
-
-
-}
 
