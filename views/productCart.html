@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Carrito</title>
     <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="css/login.css">
     <link href="http://fonts.cdnfonts.com/css/american-typewriter" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="css/carrito.css">
+
 </head>
 
 <body>
@@ -24,11 +25,12 @@
                 </div>
                 <div></div>
                 <div class="iconos">
-                    <a href="/productCart"> <img src="images/carrito.png" alt="Logo Pastelería"></a>
-                    <a href="/login"> <img src="images/login.png" alt="Logo Pastelería"></a>
-                </div>
+                   <a href="/productCart" > <img src="images/carrito.png"   alt="Logo Pastelería"></a> 
+                   <a href="/login"> <img src="images/login.png"   alt="Logo Pastelería"></a>
+                </div>    
             </div>
         </div>
+
         <div>
             <nav>
                 <ul>
@@ -39,40 +41,46 @@
                     <li><a href="#">Contactanos</a></li>
                 </ul>
             </nav>
-            <div class="burger-menu">
-                <i class="fa fa-bars burger"></i>
-            </div>
+        </div>
+        <div class="burger-menu">
+            <i class="fa fa-bars burger"></i>
         </div>
     </header>
-
     <main>
-        <section class="main-login">
-            <div>
-                <div class="bienvenida">
-                    <h2>¡Bienvenido(a)!</h2>
-                    <p>Ingresa tus credenciales para iniciar sesión</p>
+        <div class="main-title">
+            <h4>Carrito de compras</h4>
+        </div>
+        <form class="form-carrito" action="/comprar" method="post">
+            <div class="productos">
+                <div class="encabezado">
+                    <div>
+                        <p>Pastel de fresas para 12 personas</p>
+                    </div>
+                    <div><img src="images/Pastel_de_Cumpleaños.png" alt="Pastel de cumpleaños"> </div>
                 </div>
-
-                <form class="form-login" action="/login" method="post">
-                    <input class="barrainfo" type="text" name="usuario" placeholder="Nombre de usuario" required
-                        maxlength="20" minlength="2">
-                    <input class="barrainfo" type="password" name="password" placeholder="Elegí tu contraseña" required
-                        minlength="4" maxlength="16">
-                    <a href="" class="registrarse" style="font-size: larger; margin-top: 3vh;">¿Olvidaste tu
-                        contraseña?</a>
-                    <button class="boton" type="submit">Enviar</button>
-                </form>
-
-                <div class="registrarse">
-                    <h3>¿No tienes usuario?</h3>
-                    <a href="/register">Registrate</a>
-
+                <div class="fila">                    
+                    <div>
+                        <p>Precio</p>
+                    </div>
+                    <div>$20.000 </div>
+                    <div>
+                        <p>Cantidad</p>
+                    </div>             
+                    <div>2</div>
+                    <div>
+                        <p>Total</p>
+                    </div>
+                    <div>$40.000</div>
                 </div>
             </div>
-        </section>
+            <div class="div-boton">
+                <button class="boton" type="submit">Enviar</button>
+            </div>>
+        </form>
 
         </section>
     </main>
+
     <footer>
         <div class="footer-contenedor">
             <div>
@@ -104,8 +112,6 @@
             </div>
         </div>
     </footer>
-
-
 </body>
 
 </html>
