@@ -1,3 +1,10 @@
+
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+
 .form-login {
     display: flex;
     flex-direction: column;
@@ -55,4 +62,15 @@
 .registrarse h3 { 
     padding-right: 1vh;
     padding-left: 1vh;
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+main section article{
+    background-color: #fff;    
+    margin: 10px 0px;
 }
