@@ -175,6 +175,7 @@ section.productos-estrella div.products article {
 
 section.productos-estrella article {
   margin: 10px 0px;
+  padding: 2px;
 }
 
 section.productos-estrella article img {
@@ -227,6 +228,16 @@ section.promo-del-mes article img.titulo {
   border: none;
   padding-inline: 10px;
   border-radius: 15px;
+}
+
+.description{
+  font-size: larger;
+}
+
+.discount{
+  font-size: smaller;
+  text-decoration: line-through;
+  color: #d69a0e;
 }
 
 footer {
