@@ -54,9 +54,10 @@ main{
 
 .registrarse{
     display: flex;
-    margin-left: 15%;
+    margin-left: 18%;
     flex-direction: row;
     color: #633812;
+    margin-bottom: 2vh;
 }
 
 .registrarse h3 { 
@@ -64,10 +65,17 @@ main{
     padding-left: 1vh;
 }
 
+.registrarse a {
+    font-size: larger;
+    font-weight:bold;
+}
+
 main{
     width: 90%;
     margin: 0 auto;
     height: 100%;
+    margin-top: 3%;
+    margin-bottom: 3%;
 }
 
 main section article{
