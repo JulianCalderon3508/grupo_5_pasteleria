@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/register.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link href="http://fonts.cdnfonts.com/css/american-typewriter" rel="stylesheet">
+
+</head>
+
+<body>
+   <%- include('./partials/header')  %> 
+    <main>
+        <section class="main-register">
+            <form action="/product/createProduct" method="post">
+                <input class="barrainfo" type="text" name="nombreProducto" value="Pastel Personalizado" placeholder="Nombre Producto" required
+                    minlength="4">
+                <input class="barrainfo" type="number" name="precio" placeholder="Precio" value="$50.000" required
+                    minlength="2" maxlength="15" >
+                <textarea name="descripcion" class="barrainfo" placeholder="Descripción" value="Pastel de tres leches, cubierto por chocolate, se puede realiza cualquier tipo de diseño"  ></textarea>
+                <button class="boton" type="submit">Editar</button>
+                <button class="boton" type="reset">Borrar</button> 
+            </form>
+        </section>
+
+    </main>
+
+    <%- include('./partials/footer')  %> 
+
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link href="http://fonts.cdnfonts.com/css/american-typewriter" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="css/carrito.css">
+
+</head>
+
+<body>
+    <%- include('./partials/header.ejs')  %> 
+    <main>
+        <div class="main-title">
+            <h4>Carrito de compras</h4>
+        </div>
+        <form class="form-carrito" action="/comprar" method="post">
+            <div class="productos">
+                <div class="encabezado">
+                    <div>
+                        <p>Pastel de fresas para 12 personas</p>
+                    </div>
+                    <div><img src="images/Pastel_de_Cumpleaños.png" alt="Pastel de cumpleaños"> </div>
+                </div>
+                <div class="fila">                    
+                    <div>
+                        <p>Precio</p>
+                    </div>
+                    <div>$20.000 </div>
+                    <div>
+                        <p>Cantidad</p>
+                    </div>             
+                    <div>2</div>
+                    <div>
+                        <p>Total</p>
+                    </div>
+                    <div>$40.000</div>
+                </div>
+            </div>
+            <div class="div-boton">
+                <button class="boton" type="submit">Enviar</button>
+            </div>
+        </form>
+
+        </section>
+    </main>
+
+    <%- include('./partials/footer')  %> 
+</body>
+
+</html>

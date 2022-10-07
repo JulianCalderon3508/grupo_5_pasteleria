@@ -12,36 +12,9 @@
 
 </head>
 
+<%-include('./partials/header.ejs')   %> 
 <body>
-    <header>
-        <div class="top-header">
-            <div>
-                <img src="images/top.png" class="image-top">
-            </div>
-            <div class="contenedor">
-                <div class="logo">
-                    <a href="/"> <img src="images/logo.png" class="image-logo" alt="Logo Pastelería"></a>
-                </div>
-                <div></div>
-                <div class="iconos">
-                    <a href="/productCart"> <img src="images/carrito.png" alt="Logo Pastelería"></a>
-                    <a href="/login"> <img src="images/login.png" alt="Logo Pastelería"></a>
-                </div>
-            </div>
-        </div>
-        <div>
-            <nav><ul>
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="/product-detail">Pastelería</a></li>
-                <li><a href="#">Cupcakes</a></li>
-                <li><a href="#">Postres</a></li>
-                <li><a href="#">Contactanos</a></li>
-            </ul></nav>
-            <div class="burger-menu">
-                <i class="fa fa-bars burger"></i>
-            </div>
-        </div>
-    </header>
+    
     <main>
         <section class="banner-home">
             <div class="formulario-home">
@@ -108,37 +81,7 @@
         </section>
     </main>
 
-    <footer>
-        <div class="footer-contenedor">
-            <div>
-                <h4>Home</h4>
-                <a href="">Nosotros</a>
-                <a href="">Pastelería</a>
-                <a href="">Cupcakes</a>
-                <a href="">Postres</a>
-            </div>
-            <div>
-                <h4>Contactanos</h4>
-                <p>info@pastelplace.com</p>
-                <p>(123) 4567890</p>
-            </div>
-            <div>
-                <h4>Horario de atención</h4>
-                <p>Lunes a viernes 8:00 a.m. - 8:00 p.m.</p>
-                <p>Sabado, domingo y festivo</p>
-                <p>9:00 a.m. 10:pm</p>
-            </div>
-            <div class="social-media">
-                <h4>Siguenos</h4>
-                <div>
-                    <a href=""> <img src="images/Instagram.png"></a>
-                </div>
-                <div>
-                    <a href=""><img src="images/Facebook.png"></a>
-                </div>
-            </div>
-        </div>
-    </footer>
+   <%- include('./partials/footer.ejs')  %> 
 </body>
 
 </html>

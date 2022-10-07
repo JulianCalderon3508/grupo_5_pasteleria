@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link href="http://fonts.cdnfonts.com/css/american-typewriter" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+</head>
+
+<body>
+  <%- include('./partials/header.ejs')  %> 
+
+    <main>
+        <section class="main-login">
+            <div>
+                <div class="bienvenida">
+                    <h2>¡Bienvenido(a)!</h2>
+                    <p>Ingresa tus credenciales para iniciar sesión</p>
+                </div>
+
+                <form class="form-login" action="/login" method="post">
+                    <input class="barrainfo" type="text" name="usuario" placeholder="Nombre de usuario" required
+                        maxlength="20" minlength="2">
+                    <input class="barrainfo" type="password" name="password" placeholder="Elegí tu contraseña" required
+                        minlength="4" maxlength="16">
+                    <a href="" class="registrarse" style="font-size: larger; margin-top: 3vh;">¿Olvidaste tu
+                        contraseña?</a>
+                    <button class="boton" type="submit">Enviar</button>
+                </form>
+
+                <div class="registrarse">
+                    <h3>¿No tienes usuario?</h3>
+                    <a href="/register">Registrate</a>
+
+                </div>
+            </div>
+        </section>
+
+        </section>
+    </main>
+    <%- include('./partials/footer.ejs')  %> 
+
+</body>
+
+</html>
