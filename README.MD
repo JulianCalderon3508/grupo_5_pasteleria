@@ -39,4 +39,8 @@ https://almadebarriocafe.com/
 
 
 
+Posibles sabores de los pasteles y cupcakes 
+Limon, Chocolate, Tres Leches, Frutilla, Vainilla, Cookies and Cream, Hershey's, Dulce de Leche
 
+Posibles Rellenos 
+Merengue, Maracuya, Crema con Frutillas, Crema con Durazno, Dulce de Leche con Chips de Chocolate, Relleno Chocotorta, Frutos Rojos, Mora,
