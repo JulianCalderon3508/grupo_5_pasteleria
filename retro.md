@@ -10,3 +10,17 @@ Esperamos mejorar la comunicación en este sprint e identificar con facilidad lo
 //Retrospectiva sprint 3:
 En este sprint aun no se logra mejorar la comunicación, sin embargo aunque se logra realizar las actividades de este sprint, aún faltan unos temas de diseño y css que corresponden al primero. Por otro lado para el siguiente sprint lo que se va a hacer es seccionas las vistas y las rutas en carpetas separadas, para los usuarios y los productos. Adicionalmente, mejorar la visualización de los productos, ya que actualmente solo se tiene uno, pero por tiempo no hemos podido ingresar más información.
 
+//Sprint 4:
+Keep Doing:
+1. Trabajar en reuniones para solucionar las dudas entre nosotros.
+
+More Of:
+1. Organización
+2. Más comunicación aparte del horario de clase.
+
+Start Doing:
+1. Completar las vistas que hacen falta como lo son: Nosotros, Contactano, Carrito de compras y Detalle de producto.
+2. Ajustar bien los estilos para que sea mas responsive.
+
+Stop Doing:
+1. Dejar todo para último momento.
