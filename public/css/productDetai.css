@@ -37,6 +37,14 @@ h1{
     color: #633812;
     padding: 5px;
 }
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+  }
 
 
-
+.caja-productos:hover {
+    opacity: .5;
+    transition: opacity .5s ease-out;  
+}

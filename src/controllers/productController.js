@@ -13,7 +13,6 @@ const productController ={
             productos,
             categoria
         })
-
     },
     detalle:(req,res)=>{
         let id = req.params.id   
