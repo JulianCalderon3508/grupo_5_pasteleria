@@ -1,102 +1,134 @@
 [
-    {
-        "id": 1,
-        "NombreProducto": "ChocoTorta",
-        "Descripcion": "La chocotorta es un postre a base de galletas de chocolate, queso crema y dulce de leche. Este clásico argentino es ideal para los festejos de cumpleaños. En 2020 fue elegida como el mejor postre del mundo: el sitió TasteAtlas la colocó por encima del helado de pistachos italiano y la tarta de manzana alemana." , 
-        "Imagen": "chocotorta.jpg",
-        "Categoria": "Pasteleria",
-        "Precio": 38,
-        "Disponible": false,
-        "Type": "Producto Estella"
-    },
-    {
-        "id": 2,
-        "NombreProducto": "CupCakes Basico",
-        "Descripcion": "Un cupcake, también conocido como patty cake o fairy cake, es una pequeña tarta individual que se cocina frecuentemente en moldes similares a los empleados para hacer muffins o magdalenas. La versión basica viene sin decoración personalizada",
-        "Imagen": "Cupcake_Sencillo.png",
-        "Categoria": "CupCake",
-        "Precio": 28,
-        "Disponible": true,
-        "Type": "Producto Estella"
-    },
-    {
-        "id": 3,
-        "NombreProducto": "Torta de Cumpleaños",
-        "Descripcion": "",
-        "Imagen": "Pastel_de_Cumpleaños.png",
-        "Categoria": "Pasteleria",
-        "Precio": 69,
-        "Disponible": false,
-        "Type": "Producto Estella"
-    },
-    {
-        "id": 4,
-        "NombreProducto": "Tiramisu",
-        "Descripcion": "Pionono de café bien húmedo, batido de queso, crema y salsa inglesa. Con cobertura de cacao en polvo",
-        "Imagen": "Tiramisu.jpg",
-        "Categoria": "Pasteleria",
-        "Precio": 54,
-        "Disponible": false,
-        "Type": "Normal"
-    },
-    {
-        "id": 5,
-        "NombreProducto": "Torta de Despedida de Soltero",
-        "Descripcion": "A nuestras tortas tradicionales le sumamos las mejores coberturas y decoraciones especiales para tu despedida de soltero. ",
-        "Imagen": "Despedida.jpg",
-        "Categoria": "Postre",
-        "Precio": 65,
-        "Disponible": false,
-        "Type": "Promocion"
-    },
-    {
-        "id": 6,
-        "NombreProducto": "CupCakes Halloween",
-        "Descripcion": "Se acerca Halloween y decoramos todo con esta temática. Con nuestros diferentes diseños, hace de tu festejo un momento dulcemente espeluznante.",
-        "Imagen": "Cupcakes_Halloween.png",
-        "Categoria": "CupCake",
-        "Precio": 23,
-        "Disponible": false,
-        "Type": "Producto Estrella"
-    },
-    {
-        "id": 7,
-        "NombreProducto": "CupCakes Personalizado",
-        "Descripcion": "Al sabor de nuestros cupcakes sumale el diseño que más te guste. Con la opción de personalizar su cobertura, conseguí los cupcakes que siempre soñaste. ",
-        "Imagen": "Cupcake_Personalizado.jpg",
-        "Categoria": "CupCake",
-        "Precio": 44,
-        "Disponible": true,
-        "Type": "Normal"
-    },
-    {
-        "id": 8,
-        "NombreProducto": "Pie de Limón",
-        "Descripcion": "",
-        "Imagen": "Pie_de_Limon.png",
-        "Categoria": "Postre",
-        "Precio": 100,
-        "Disponible": true,
-        "Type": "Normal"
-    },
-    {
-        "id": 9,
-        "NombreProducto": "Pastel de Boda",
-        "Descripcion": "",
-        "Imagen": "Pastel_de_Boda.png",
-        "Categoria": "Pasteleria",
-        "Precio": 54,
-        "Disponible": true,
-        "Type": "Normal"
-    },
-    {
-        "id": 10,
-        "NombreProducto": "Torta personalizado",
-        "Descripcion": "Al sabor de nuestras tortas sumale el diseño que más te guste. Con la opción de personalizar su cobertura, conseguí la torta que siempre soñaste. ",
-        "Imagen": "Pastel_Meme.png",
-        "Categoria": "Pasteleria",
-        "Precio": 87,
-        "Disponible": true,
-        "Type": "Normal"
-    }
-]   
+ {
+  "id": 1,
+  "NombreProducto": "ChocoTorta",
+  "Descripcion": "La chocotorta es un postre a base de galletas de chocolate, queso crema y dulce de leche. Este clásico argentino es ideal para los festejos de cumpleaños. En 2020 fue elegida como el mejor postre del mundo: el sitió TasteAtlas la colocó por encima del helado de pistachos italiano y la tarta de manzana alemana.",
+  "Imagen": "chocotorta.jpg",
+  "Categoria": "Pasteleria",
+  "Precio": 38,
+  "Disponible": false,
+  "Type": "Producto Estella"
+ },
+ {
+  "id": 2,
+  "NombreProducto": "CupCakes Basico",
+  "Descripcion": "Un cupcake, también conocido como patty cake o fairy cake, es una pequeña tarta individual que se cocina frecuentemente en moldes similares a los empleados para hacer muffins o magdalenas. La versión basica viene sin decoración personalizada",
+  "Imagen": "Cupcake_Sencillo.png",
+  "Categoria": "CupCakes",
+  "Precio": 28,
+  "Disponible": true,
+  "Type": "Producto Estella"
+ },
+ {
+  "id": 3,
+  "NombreProducto": "Torta de Cumpleaños",
+  "Descripcion": "",
+  "Imagen": "Pastel_de_Cumpleaños.png",
+  "Categoria": "Pasteleria",
+  "Precio": 69,
+  "Disponible": false,
+  "Type": "Producto Estella"
+ },
+ {
+  "id": 4,
+  "NombreProducto": "Tiramisu",
+  "Descripcion": "Pionono de café bien húmedo, batido de queso, crema y salsa inglesa. Con cobertura de cacao en polvo",
+  "Imagen": "Tiramisu.jpg",
+  "Categoria": "Pasteleria",
+  "Precio": 54,
+  "Disponible": false,
+  "Type": "Normal"
+ },
+ {
+  "id": 5,
+  "NombreProducto": "Torta de Despedida de Soltero",
+  "Descripcion": "A nuestras tortas tradicionales le sumamos las mejores coberturas y decoraciones especiales para tu despedida de soltero. ",
+  "Imagen": "Despedida.jpg",
+  "Categoria": "Postres",
+  "Precio": 65,
+  "Disponible": false,
+  "Type": "Promocion"
+ },
+ {
+  "id": 6,
+  "NombreProducto": "CupCakes Halloween",
+  "Descripcion": "Se acerca Halloween y decoramos todo con esta temática. Con nuestros diferentes diseños, hace de tu festejo un momento dulcemente espeluznante.",
+  "Imagen": "Cupcakes_Halloween.png",
+  "Categoria": "CupCakes",
+  "Precio": 23,
+  "Disponible": false,
+  "Type": "Producto Estrella"
+ },
+ {
+  "id": 7,
+  "NombreProducto": "CupCakes Personalizado",
+  "Descripcion": "Al sabor de nuestros cupcakes sumale el diseño que más te guste. Con la opción de personalizar su cobertura, conseguí los cupcakes que siempre soñaste. ",
+  "Imagen": "Cupcake_Personalizado.jpg",
+  "Categoria": "CupCakes",
+  "Precio": 44,
+  "Disponible": true,
+  "Type": "Normal"
+ },
+ {
+  "id": 8,
+  "NombreProducto": "Pie de Limón",
+  "Descripcion": "",
+  "Imagen": "Pie_de_Limon.png",
+  "Categoria": "Postres",
+  "Precio": 100,
+  "Disponible": true,
+  "Type": "Normal"
+ },
+ {
+  "id": 9,
+  "NombreProducto": "Pastel de Boda",
+  "Descripcion": "",
+  "Imagen": "Pastel_de_Boda.png",
+  "Categoria": "Pasteleria",
+  "Precio": 54,
+  "Disponible": true,
+  "Type": "Normal"
+ },
+ {
+  "id": 10,
+  "NombreProducto": "Torta personalizado",
+  "Descripcion": "Al sabor de nuestras tortas sumale el diseño que más te guste. Con la opción de personalizar su cobertura, conseguí la torta que siempre soñaste. ",
+  "Imagen": "Pastel_Meme.png",
+  "Categoria": "Pasteleria",
+  "Precio": 87,
+  "Disponible": true,
+  "Type": "Normal"
+ },
+ {
+  "id": 11,
+  "Imagen": "default-image.png",
+  "NombreProducto": "Torta de Chocolate",
+  "Precio": "30",
+  "Categoria": "Pasteleria",
+  "Descripcion": "Deliciosa torta al estilo matilda Bruce Bruce"
+ },
+ {
+  "id": 12,
+  "Imagen": "Imagen-1666677372411.jpg",
+  "NombreProducto": "Chocotorta 2.0 ",
+  "Precio": "30",
+  "Categoria": "CupCakes",
+  "Descripcion": "Test CupCake"
+ },
+ {
+  "id": 13,
+  "Imagen": "Imagen-1666677649934.jpg",
+  "NombreProducto": "Postre tres leches ",
+  "Precio": "40",
+  "Categoria": "Postres",
+  "Descripcion": "Postre de la leche de la vaca lola"
+ },
+ {
+  "id": 14,
+  "Imagen": "Imagen-1666677729614.jpg",
+  "NombreProducto": "Torta de Chocolate",
+  "Precio": "12323",
+  "Categoria": "Pasteleria",
+  "Descripcion": "Test"
+ }
+]

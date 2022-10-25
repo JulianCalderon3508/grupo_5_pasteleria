@@ -8,9 +8,9 @@
 .container-productos{    
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
-    margin-inline: 160px;
+    margin-inline: 160px;    
 }
 
 .caja-productos{

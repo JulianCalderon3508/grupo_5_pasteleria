@@ -13,15 +13,15 @@
   <%- include('./partials/header.ejs')  %> 
     <main>
         <div class="productos">
-            <h1>Pasteles</h1>
+            <h1><%= producto.Categoria %> </h1>
         </div>
         <div class="contenedor">
             <div>
-                <img src="images/Pastel_de_Cumpleaños.png" alt="Pastel_de_Cumpleaños">
+                <img src="images/<%= producto.Imagen %> " alt="Pastel_de_Cumpleaños">
             </div>
             <div>
-                <h2>Torta de cumpleaños</h2>
-                <p>Esta torta de cumpleaños es una de las mas pedidas por su exquisito sabor y presentación.</p>
+                <h2><%= producto.NombreProducto %>  </h2>
+                <p><%= producto.Descripcion %> </p>
             </div>
         </div>
     </main>

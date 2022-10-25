@@ -41,7 +41,7 @@ main form{
 }
 .barrainfo{
     margin: 1vh;
-    padding: 2vh;
+    padding: 1vh;
     margin-bottom: 3vh;
     margin-top: 3vh;
     border-radius: 10vh ;
@@ -61,6 +61,10 @@ main form{
     margin-top: 2vh;
     margin-bottom: 2vh;
     font-size: larger;
+}
+
+.div-botones{
+    text-align: center;
 }
 
 

@@ -13,24 +13,36 @@
 </head>
 
 <body>
-   <%- include('./partials/header')  %> 
-    <main>
-        <section class="main-register">
-            <form action="/product/createProduct" method="post">
-                <input class="barrainfo" type="text" name="nombreProducto" placeholder="Nombre Producto" required
-                    minlength="4">
-                <input class="barrainfo" type="number" name="precio" placeholder="Precio" required
-                    minlength="2" maxlength="15" >
-                <textarea name="descripcion" class="barrainfo" placeholder="Descripción"  ></textarea>
-              
-                <button class="boton" type="submit">Crear</button>
-                <button class="boton" type="reset">Borrar</button> 
-            </form>
-        </section>
+    <%- include('./partials/header') %>
+        <main>
+            <section class="main-register">
+                <form action="/product" method="POST" enctype="multipart/form-data">
+                    <input class="barrainfo" type="text" name="NombreProducto" placeholder="Nombre Producto" required
+                        minlength="4">
+                    <input class="barrainfo" type="number" name="Precio" placeholder="Precio" required minlength="2"
+                        maxlength="15">
 
-    </main>
+                    <select class="barrainfo" name="Categoria" id="categoria" placeholder="Categoría" required>
+                        <option value="">Seleccionar</option>
+                        <option value="CupCakes">CupCakes</option>
+                        <option value="Pasteleria">Pasteleria</option>
+                        <option value="Postres">Postres</option>
+                    </select>
 
-    <%- include('./partials/footer')  %> 
+                    <input type="file" name="Imagen" id="Imagen" accept=".jpg,.png">
+                    <textarea name="Descripcion" class="barrainfo" placeholder="Descripción"></textarea>
+
+                    <div class="div-botones">
+                        <button class="boton" type="submit">Crear</button>
+                        <button class="boton" type="reset">Borrar</button>
+                    </div>
+
+                </form>
+            </section>
+
+        </main>
+
+        <%- include('./partials/footer') %>
 
 </body>
 

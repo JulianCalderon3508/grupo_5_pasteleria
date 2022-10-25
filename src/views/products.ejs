@@ -12,11 +12,12 @@
 <body>
   <%- include('./partials/header.ejs')  %> 
     <div class="categoria">
-        <h1>Pasteles</h1>
+        <h1><%= categoria %> </h1>
     </div>
     <div class="container-productos">             
         <% productos.forEach(producto => { %>
             <section class="caja-productos">
+                <a href="/product/detalle/<%= producto.id %>">
                 <figure class="imagen-producto">
                     <img src="images/<%= producto.Imagen %> " alt="<%= producto.NombreProducto %> ">
                 </figure>
@@ -24,6 +25,7 @@
                     <h2><%= producto.NombreProducto  %> </h2>                    
                     <h3>$ <%= producto.Precio %> </h3>
                 </article>
+            </a>
             </section>
         <% }) %>
     </div>
