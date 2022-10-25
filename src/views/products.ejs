@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle de producto</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link href="http://fonts.cdnfonts.com/css/american-typewriter" rel="stylesheet">
+    <link rel="stylesheet" href="../css/productDetai.css">
+</head>
+<body>
+  <%- include('./partials/header.ejs')  %> 
+    <div class="categoria">
+        <h1>Pasteles</h1>
+    </div>
+    <div class="container-productos">             
+        <% productos.forEach(producto => { %>
+            <section class="caja-productos">
+                <figure class="imagen-producto">
+                    <img src="images/<%= producto.Imagen %> " alt="<%= producto.NombreProducto %> ">
+                </figure>
+                <article class="descipcion-producto">
+                    <h2><%= producto.NombreProducto  %> </h2>                    
+                    <h3>$ <%= producto.Precio %> </h3>
+                </article>
+            </section>
+        <% }) %>
+    </div>
+    <%- include('./partials/footer')  %> 
+</body>
+</html>
