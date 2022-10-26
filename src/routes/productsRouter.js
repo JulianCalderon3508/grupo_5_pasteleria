@@ -25,6 +25,8 @@ router.post('/', upload.any() , productController.agregarProducto);
 router.get('/detalle/:id', productController.detalle);
 
 
-router.get('/editProduct', productController.editProduct)
+
+router.get('/editProduct/:id', productController.editProduct)
+router.patch('/editProduct/:id', productController.actualizar);
 
 module.exports = router;

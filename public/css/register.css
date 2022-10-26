@@ -41,13 +41,18 @@ main form{
 }
 .barrainfo{
     margin: 1vh;
-    padding: 1vh;
-    margin-bottom: 3vh;
+    padding: 1vh;    
     margin-top: 3vh;
     border-radius: 10vh ;
     border: white solid ;
     background-color: #fff;
     
+}
+.imagen{
+    margin: 1vh;
+    padding: 1vh;    
+    margin-top: 3vh;
+    border-radius: 10vh ;    
 }
 .barrafoto {
     border: #633812 solid 1vh;

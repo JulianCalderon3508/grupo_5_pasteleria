@@ -27,14 +27,9 @@ const productController ={
     },
 
     agregarProducto:(req,res)=>{
-        let image
-		if(req.files[0] != undefined){
-			image = req.files[0].filename
-		} else {
-			image = 'default-image.png'
-		}
+        let image	
 
-		( req.files[0] != undefined ) ? image = req.files[0].filename : image = 'default-image.png'
+		( req.files[0] != undefined ) ? image = req.files[0].filename : image = '';
 
 		let newProduct = {
 			id: productosJson[productosJson.length - 1].id + 1,
@@ -43,15 +38,37 @@ const productController ={
 		};
         productosJson.push(newProduct)
 		fs.writeFileSync(productosArchivo, JSON.stringify(productosJson, null, ' '));
-
 		res.redirect('/product?categoria=' + req.body.Categoria);
     },
 
-
-
-
     editProduct:(req,res)=>{
-        res.render('editProduct');
+        let id = req.params.id;
+        console.log(id);
+        let productoEditar = productosJson.find(producto => producto.id == id);
+        res.render('editProduct', {productoEditar});
+    },
+
+    actualizar: (req,res)=>{
+        let id = req.params.id;
+        let image = '';
+		let productoActualizar = productosJson.find(product => product.id == id)
+        console.log(req.files);        
+        console.log('EL BODY ES' + req.files)
+		productoActualizar = {
+			id: productoActualizar.id,
+			...req.body,
+			Imagen: productoActualizar.Imagen,
+		};
+		console.log(productoActualizar);
+		let nuevoProducto = productosJson.map(producto => {
+			if (producto.id == productoActualizar.id) {
+				return producto = {...productoActualizar};
+			}
+			return productosJson;
+		})
+
+		fs.writeFileSync(productosArchivo, JSON.stringify(nuevoProducto, null, ' '));
+		res.redirect('/product?categoria=' + req.body.Categoria);
     }
 }
 module.exports = productController;

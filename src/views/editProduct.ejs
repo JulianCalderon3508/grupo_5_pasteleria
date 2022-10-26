@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../css/home.css">
-    <link rel="stylesheet" href="../css/register.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/register.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link href="http://fonts.cdnfonts.com/css/american-typewriter" rel="stylesheet">
 
@@ -17,14 +17,26 @@
    <%- include('./partials/header')  %> 
     <main>
         <section class="main-register">
-            <form action="/product/createProduct" method="post">
-                <input class="barrainfo" type="text" name="nombreProducto" value="Pastel Personalizado" placeholder="Nombre Producto" required
+            <form action="/product/editProduct/<%= productoEditar.id  %>?_method=PATCH " method="POST" enctype="multipart/form-data">
+                <input class="barrainfo" type="text" value="<%= productoEditar.NombreProducto %> " name="NombreProducto" placeholder="Nombre Producto" required
                     minlength="4">
-                <input class="barrainfo" type="number" name="precio" placeholder="Precio" value="$50.000" required
-                    minlength="2" maxlength="15" >
-                <textarea name="descripcion" class="barrainfo" placeholder="Descripción" value="Pastel de tres leches, cubierto por chocolate, se puede realiza cualquier tipo de diseño"  ></textarea>
-                <button class="boton" type="submit">Editar</button>
-                <button class="boton" type="reset">Borrar</button> 
+                <input class="barrainfo" type="number" name="Precio" value="<%= productoEditar.Precio %>" placeholder="Precio" required minlength="2"
+                    maxlength="15">
+
+                <select class="barrainfo" name="Categoria" id="categoria" placeholder="Categoría" required>
+                    <option value="">Seleccionar</option>
+                    <option value="CupCakes">CupCakes</option>
+                    <option value="Pasteleria">Pasteleria</option>
+                    <option value="Postres">Postres</option>
+                </select>
+                <input type="file"class="imagen" name="Imagen" required id="Imagen" accept=".jpg,.png">
+                <textarea name="Descripcion" class="barrainfo" placeholder="Descripción"><%= productoEditar.Descripcion %></textarea>
+
+                <div class="div-botones">
+                    <button class="boton" type="submit">Guardar</button>
+                    
+                </div>
+
             </form>
         </section>
 
