@@ -46,6 +46,7 @@ main form{
     border-radius: 10vh ;
     border: white solid ;
     background-color: #fff;
+    font-size: 16px;
     
 }
 .imagen{
@@ -53,6 +54,7 @@ main form{
     padding: 1vh;    
     margin-top: 3vh;
     border-radius: 10vh ;    
+    font-size: 15px;
 }
 .barrafoto {
     border: #633812 solid 1vh;

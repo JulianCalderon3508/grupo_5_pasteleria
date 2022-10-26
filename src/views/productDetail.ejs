@@ -23,7 +23,11 @@
                 <h2 class="nombreproducto"><%= producto.NombreProducto %>  </h2>
                 <h3 class="precioproducto">$ <%= producto.Precio %> </h3>
                 <p class="descripcionproducto"><%= producto.Descripcion %> </p>
-                <button class="botoncomprar">¡Lo quiero!</button>
+                
+                <a href="/product/editProduct/<%= producto.id %>" class="botonActualizar">ACTUALIZAR</a>                
+                <form action="/product/delete/<%= producto.id %>?_method=DELETE" method="POST" style="display: inline-flex">
+                    <button type="submit"  class="botoncomprar">ELIMINAR</button>
+                </form>               
             </div>
         </div>
         
