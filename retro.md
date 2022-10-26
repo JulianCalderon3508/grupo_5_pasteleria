@@ -24,3 +24,5 @@ Start Doing:
 
 Stop Doing:
 1. Dejar todo para último momento.
+
+Link de trello sprint 4 https://trello.com/b/lj0CQgOD/proyecto-integrador-grupo-5-sprint-4
