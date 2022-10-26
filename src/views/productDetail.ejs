@@ -12,18 +12,21 @@
 <body>
   <%- include('./partials/header')  %> 
     <main>
-        <div class="productos">
+        <div class="productosdetalleproducto">
             <h1><%= producto.Categoria %> </h1>
         </div>
-        <div class="contenedor">
+        <div class="contenedordetalleproducto">
             <div>
-                <img src="images/<%= producto.Imagen %> " alt="Pastel_de_Cumpleaños">
+                <img src="/images/<%= producto.Imagen%> " alt="Pastel_de_Cumpleaños">
             </div>
-            <div>
-                <h2><%= producto.NombreProducto %>  </h2>
-                <p><%= producto.Descripcion %> </p>
+            <div class="cajadetalleproducto">
+                <h2 class="nombreproducto"><%= producto.NombreProducto %>  </h2>
+                <h3 class="precioproducto">$ <%= producto.Precio %> </h3>
+                <p class="descripcionproducto"><%= producto.Descripcion %> </p>
+                <button class="botoncomprar">¡Lo quiero!</button>
             </div>
         </div>
+        
     </main>
     <%- include('./partials/footer')  %> 
 </body>
